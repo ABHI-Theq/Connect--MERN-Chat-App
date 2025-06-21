@@ -15,7 +15,7 @@ import {io} from 'socket.io-client'
 
     useEffect(()=>{
         if(authUser){
-            const socket=io('http://localhost:5000',{
+            const socket=io('https://connect-mern-chat-app-backend.onrender.com',{
                 query:{
                     userId:authUser._id
                 }
